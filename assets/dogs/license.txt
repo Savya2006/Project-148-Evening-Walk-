@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dogs
+* source:	https://sketchfab.com/3d-models/dogs-e8d121d8a25c4e469ae4e6b0db66bbb5
+* author:	Methamar (https://sketchfab.com/Methamar)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dogs" (https://sketchfab.com/3d-models/dogs-e8d121d8a25c4e469ae4e6b0db66bbb5) by Methamar (https://sketchfab.com/Methamar) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

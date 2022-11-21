@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lights and Shadows</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Loading Assets  -->
+      <a-a-assets>
+        <a-asset-item id="bench" src="assets/bench/scene.gltf"></a-asset-item>
+        <a-asset-item id="street" src="assets/street/scene.gltf"></a-asset-item>
+        <a-asset-item id="lamp" src="assets/lamp/scene.gltf"></a-asset-item>
+        <a-asset-item id="dog" src="assets/shiba/scene.gltf"></a-asset-item>
+        <a-asset-item id="dog2" src="assets/dogs/scene.gltf"></a-asset-item>
+        <a-asset-item id="cycle" src="assets/coursework_draft/scene.gltf"></a-asset-item>
+        <a-asset-item id="child" src="assets/sitting_child/scene.gltf"></a-asset-item>
+      </a-a-assets>
+      <a-sky color="#2a281e"></a-sky>
+
+      <!-- BG scene -->
+      <a-box id="background-scene" src="assets/BG.jpg" position="0 13 -4" width="70" height="25">  </a-box>
+
+     <a-sound src="Audio.mp3" autoplay="true" volume="1"></a-sound>  
+
+      <!-- Street -->
+       <a-entity shadow="receive:true;">
+        <a-entity scale="0.02 0.04 0.1" gltf-model="#street" position="0 0 -1" rotation="0 90 0"> </a-entity>
+        
+        <a-entity scale="0.02 0.04 0.1" gltf-model="#street" position="0 0 3" rotation="0 90 0" ></a-entity>
+      </a-entity>
+
+      <!-- Bench1 -->
+      <a-entity scale="3 3 3" gltf-model="#bench" position="5 0 5" shadow="cast:true;"> </a-entity>
+
+      <!-- Bench2 -->
+      <a-entity scale="3 3 3" gltf-model="#bench" position="-7 0 5" shadow="cast:true;"> </a-entity>
+
+       <!-- Bench3 -->
+       <a-entity scale="3 3 3" gltf-model="#bench" position="17 0 5" shadow="cast:true;"> </a-entity>
+
+      <!-- Street Lamp1 -->
+      <a-entity scale="0.5 0.6 0.7" gltf-model="#lamp" position="-6 0 0" shadow="cast:true;"></a-entity>
+
+      <!-- Street Lamp2 -->
+      <a-entity scale="0.5 0.6 0.7" gltf-model="#lamp" position="7 0 0" shadow="cast:true;"></a-entity>
+
+      <!-- Dog1 -->
+      <a-entity scale="2.5 2 2" gltf-model="#dog" position="3.3947 3 5" rotation="0 -60 0" shadow="cast:true;"> </a-entity>
+
+       <!-- Dog2 -->
+       <a-entity scale="2.5 2 3.5" gltf-model="#dog2" position="-6 3 5" rotation="0 -250 0" shadow="cast:true;"> </a-entity>
+
+       <!-- Cycle -->
+       <a-entity scale="0.03 0.03 0.03" gltf-model="#cycle" position="17.5 3 5" rotation="0 0 0" shadow="cast:true;"> </a-entity>
+
+        <!-- Child -->
+        <a-entity scale="3 3 3" gltf-model="#child" position="11.5 5 3.9" rotation="0 -90 0" shadow="cast:true;"> </a-entity>
+
+      <!-- CAMERA -->
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 10 18"> </a-camera>
+
+      <!-- Lights in Scene  -->
+      <a-entity light="type: point; castShadow: true; color: #e6ca14; intensity: 2.35" position="-5.92951 8.39487 1.29438"> </a-entity>
+      <a-entity light="type: ambient;"> </a-entity>
+
+    </a-scene>
+  </body>
+</html>
